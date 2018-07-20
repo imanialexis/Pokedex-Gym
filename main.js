@@ -143,5 +143,31 @@ changePoke(link, lillian, ourGym);
 nameOfPokemon = "lucario"
 link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
 // third call for lillian
-changePoke(link, lillian, ourGym);
+// changePoke(link, lillian, ourGym);
 
+setTimeout(changePoke, 5000, link, lillian, ourGym)
+
+//GOING T0 CONSOLE.LOG HOW TO POPULATE THE DIFF ELEMENTS
+
+
+// ourGym.get(trainer).listOfPokemon.i.name;
+// ourGym.get(trainer).listOfPokemon.i.hp;
+// ourGym.get(trainer).listOfPokemon.i.name;
+// ourGym.get(trainer).listOfPokemon.i.attack;
+// ourGym.get(trainer).listOfPokemon.i.defense;
+
+console.log("Hi")
+
+let trainerName = "";
+
+function setTrainer(name) {
+    trainerName = name
+
+    ourGym.listOfTrainers[trainerName];
+};
+
+setTrainer("imani");
+
+let blah = ourGym.listOfTrainers.imani;
+
+console.log(ourGym.listOfTrainers.imani);
