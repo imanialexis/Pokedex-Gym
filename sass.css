@@ -1,3 +1,29 @@
+#header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
 
+#gym-name {
+  font-family: "Pokemon GB"; }
+
+#middle-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#leader {
+  text-align: center;
+  font-family: "Pokemon GB"; }
+
+#bottom-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 200px; }
+
+#history-content {
+  text-align: center;
+  margin-top: 200px;
+  font-family: "Pokemon GB"; }
 
 /*# sourceMappingURL=sass.css.map */
