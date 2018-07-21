@@ -43,3 +43,18 @@ body {
     justify-content: space-evenly;
     margin-top: 100px
 } 
+
+// Styling for modal
+.modal {
+    #pokemonInfo, #statsInfo {
+        border: double;
+        background-color: #d9d9d9;
+        border-radius: 15px;
+        text-align: center;
+        font-family: 'Pokemon GB';
+
+        li {
+            list-style: none;
+        }
+    }
+}
