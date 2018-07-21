@@ -1,3 +1,11 @@
+//Defining variables to push information into modals
+let showName = document.getElementById('displayName')
+let showImg = document.getElementById('displayImage')
+let showAbilities = document.getElementById('displayAbilities')
+let showHP = document.getElementById('displayHP')
+let showAtk = document.getElementById('displayAtk')
+let showDef = document.getElementById('displayDef')
+
 class Pokemon {
     constructor(name, hp, attack, defense, abilities, picUrl) {
         this.name = name
@@ -15,7 +23,6 @@ class Trainer {
         this.listOfPokemon = {};
     }
     all() {
-        // console.log(this.listOfPokemon);
         return Object.values(this.listOfPokemon);
     };
 
@@ -33,7 +40,6 @@ class Gym {
         this.listOfTrainers = {};
     }
     all() {
-        // console.log(this.listOfPokemon);
         return Object.values(this.listOfTrainers);
     };
 
@@ -53,10 +59,6 @@ let imani = new Trainer("imani");
 let lillian = new Trainer("lillian");
 
 let ourGym = new Gym("ourGym")
-
-let nameOfPokemon = "jigglypuff";
-
-link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
 
 // link = "https://pokeapi-nycda.firebaseio.com/pokemon/39.json"
 
@@ -92,82 +94,91 @@ function changePoke(link, trainer, gym) {
     })
 }
 
+function changeLink(name) {
+    let nameOfPokemon = name;
+    link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon; 
+}
+
+// LILLIAN!!!!  
+
+// first call for lillian
+changeLink("lapras");
+changePoke(link, lillian, ourGym);
+
+// second call for lillian
+changeLink("latias");
+changePoke(link, lillian, ourGym);
+
+
+// third call for lillian
+changeLink("lucario");
+changePoke(link, lillian, ourGym);
+
+//BENN!!!
+
 // first call for Ben
+changeLink("jigglypuff");
 changePoke(link, ben, ourGym);
 
-
-
-nameOfPokemon = "charizard"
-link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
 // second call for Ben
+changeLink("charizard");
 changePoke(link, ben, ourGym);
 
 
-nameOfPokemon = "pikachu"
-link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
-
-
+changeLink("pikachu");
 changePoke(link, ben, ourGym);
 
 // IMANI TIME!!!!
 
-nameOfPokemon = "golbat"
-
-link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
 // first call for Imani
+changeLink("golbat");
 changePoke(link, imani, ourGym);
 
-nameOfPokemon = "gastly"
-link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
 // second call for Imani
+changeLink("gastly");
 changePoke(link, imani, ourGym);
 
-nameOfPokemon = "haunter"
-link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
+
 // third call for Imani
+changeLink("haunter");
 changePoke(link, imani, ourGym);
-
-// LILLIAN!!!!  
-
-nameOfPokemon = "lapras"
-
-link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
-// first call for lillian
-changePoke(link, lillian, ourGym);
-
-nameOfPokemon = "latias"
-link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
-// second call for lillian
-changePoke(link, lillian, ourGym);
-
-nameOfPokemon = "lucario"
-link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
-// third call for lillian
-// changePoke(link, lillian, ourGym);
-
-setTimeout(changePoke, 5000, link, lillian, ourGym)
-
-//GOING T0 CONSOLE.LOG HOW TO POPULATE THE DIFF ELEMENTS
-
-
-// ourGym.get(trainer).listOfPokemon.i.name;
-// ourGym.get(trainer).listOfPokemon.i.hp;
-// ourGym.get(trainer).listOfPokemon.i.name;
-// ourGym.get(trainer).listOfPokemon.i.attack;
-// ourGym.get(trainer).listOfPokemon.i.defense;
-
-console.log("Hi")
 
 let trainerName = "";
 
+i = 0
+
 function setTrainer(name) {
     trainerName = name
-
-    ourGym.listOfTrainers[trainerName];
+    console.log(trainerName)
+    i=0
 };
 
-setTrainer("imani");
+function changeInfo(){
+    showName.innerText = ourGym.listOfTrainers[trainerName].all()[i].name;
+    showImg.src = ourGym.listOfTrainers[trainerName].all()[i].picUrl;
+    showHP.innerText = "HP: " + ourGym.listOfTrainers[trainerName].all()[i].hp;
+    showAtk.innerText = "Attack: " + ourGym.listOfTrainers[trainerName].all()[i].attack;
+    showDef.innerText = "Defense: " + ourGym.listOfTrainers[trainerName].all()[i].defense;
+};
 
-let blah = ourGym.listOfTrainers.imani;
+function timeOut() {
 
-console.log(ourGym.listOfTrainers.imani);
+    setTimeout(changeInfo, 200)
+}
+
+function slidePrev(){
+    i--;
+    if (i==-1) {
+        i=2
+    } 
+    changeInfo();
+};
+
+function slideNext(){
+    i++;
+    if (i>2) {
+        i=0
+    } 
+    changeInfo();
+};
+
