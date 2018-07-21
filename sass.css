@@ -1,74 +1,50 @@
+@font-face {
+  font-family: 'Pokemon GB';
+  src: url("fonts/Pokemon-GB.ttf"); }
 body {
-  background: -webkit-gradient(linear, left top, right bottom, from(red), to(yellow));
-  background: linear-gradient(to bottom right, red, yellow);
-}
+  background: linear-gradient(to bottom right, red, yellow); }
 
 #header-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
+  flex-direction: row;
+  justify-content: space-between; }
 
 #gym-name {
-  font-family: 'Pokemon GB';
-}
+  font-family: "Pokemon GB"; }
 
 #middle-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+  flex-direction: column;
+  align-items: center; }
 
 #leader {
   text-align: center;
-  font-family: 'Pokemon GB';
-}
+  font-family: "Pokemon GB"; }
 
 #bottom-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 200px;
-}
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 200px; }
 
 #history-content {
   text-align: center;
   margin-top: 200px;
-  font-family: 'Pokemon GB';
-}
+  font-family: "Pokemon GB"; }
 
 #poke-gifs {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-top: 100px;
-}
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 100px; }
+
+.modal #pokemonInfo, .modal #statsInfo {
+  border: double;
+  background-color: #d9d9d9;
+  border-radius: 15px;
+  text-align: center;
+  font-family: 'Pokemon GB'; }
+  .modal #pokemonInfo li, .modal #statsInfo li {
+    list-style: none; }
+
 /*# sourceMappingURL=sass.css.map */
