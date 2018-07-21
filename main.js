@@ -1,4 +1,7 @@
+
 //Defining variables to push information into modals
+
+
 let showName = document.getElementById('displayName')
 let showImg = document.getElementById('displayImage')
 let showAbilities = document.getElementById('displayAbilities')
