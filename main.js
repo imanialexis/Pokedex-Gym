@@ -154,7 +154,11 @@ function setTrainer(name) {
 };
 
 function changeInfo(){
-    showName.innerText = ourGym.listOfTrainers[trainerName].all()[i].name;
+
+    let lowerCaseName = ourGym.listOfTrainers[trainerName].all()[i].name;
+    let firstLetterCapital = lowerCaseName.charAt(0).toUpperCase() + lowerCaseName.slice(1);
+    showName.innerText = firstLetterCapital;
+    
     showImg.src = ourGym.listOfTrainers[trainerName].all()[i].picUrl;
     showHP.innerText = "HP: " + ourGym.listOfTrainers[trainerName].all()[i].hp;
     showAtk.innerText = "Attack: " + ourGym.listOfTrainers[trainerName].all()[i].attack;
