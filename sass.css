@@ -25,7 +25,9 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 200px; }
+  margin-top: 200px;
+  padding-right: 25px;
+  padding-left: 25px; }
 
 #history-content {
   text-align: center;
