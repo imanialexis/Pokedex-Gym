@@ -190,3 +190,9 @@ function slideNext(){
     } 
     changeInfo();
 };
+
+//Audio JS
+function play() {
+    let audio = document.getElementById("easterEggAudio");
+    audio.play();
+}
