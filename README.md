@@ -1,15 +1,17 @@
-Personal Pokedex
-Goal:
+#Pokemon Gym Group Project
+## Imani,Lilian and Ben
+
+##Goal:
 To create a pokemon trainer showcase website that displays information focused around 3 pokemon chosen by the student using AJAX to retrieve said data. This project is focused on client side technologies.
 
-Github Page:
-http://gh-personal-pokedex.herokuapp.com/index.html
+##Github Page:
+https://imanialexis.github.io/Pokedex-Gym/
 
-<ul>Built With:</ul>
-<li>Object Oriented JavaScript</li>
-<li>Data from https://pokeapi.co/</li>
-<li>AJAX</li>
-<li>jQuery</li>
-<li>HTML5</li>
-<li>Sass</li>
-<li>Bootstrap</li>
+##Built With:
+*Object Oriented JavaScript
+*Data from https://pokeapi.co/
+*AJAX
+*jQuery
+*HTML5
+*Sass
+*Bootstrap
