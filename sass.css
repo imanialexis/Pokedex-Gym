@@ -38,10 +38,13 @@ body {
   padding-left: 35px;
   margin-right: 45px; }
 
-#history-content {
+#history-title {
   text-align: center;
   margin-top: 200px;
   font-family: "Pokemon GB"; }
+
+#history-content {
+  font-family: "Courier New", Courier, monospace; }
 
 #poke-gifs {
   display: flex;
