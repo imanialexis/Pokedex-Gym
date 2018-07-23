@@ -9,6 +9,9 @@ body {
   flex-direction: row;
   justify-content: space-between; }
 
+#rainbowBadge {
+  cursor: pointer; }
+
 #gym-name {
   font-family: "Pokemon GB"; }
 
