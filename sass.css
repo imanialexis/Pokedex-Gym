@@ -44,7 +44,9 @@ body {
   font-family: "Pokemon GB"; }
 
 #history-content {
-  font-family: "Courier New", Courier, monospace; }
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 20px;
+  margin-right: 20px; }
 
 #poke-gifs {
   display: flex;
