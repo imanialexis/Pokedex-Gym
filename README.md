@@ -8,7 +8,7 @@ https://imanialexis.github.io/Pokedex-Gym/
 To collaborate on a pokemon gym website showcasing all chosen pokemon from a prior solo pokemon project by utilizing libraries written by individual group members. This project is focused on client-side technologies.
 
 ## Built With:
-* Object Oriented JavaScript
+* JavaScript , using OOP principles
 * RESTful API : https://pokeapi.co/
 * AJAX
 * jQuery
