@@ -1,17 +1,17 @@
-#Pokemon Gym Group Project
-## Imani,Lilian and Ben
+# Pokemon Gym Group Project by : [Imani](http://github.com/imanialexis) :sunglasses: ,[Lilian](http://github.com/ngolilli94)  :rabbit2:, &  [Ben](http://github.com/benjwexler)  :bowtie:
 
-##Goal:
-To create a pokemon trainer showcase website that displays information focused around 3 pokemon chosen by the student using AJAX to retrieve said data. This project is focused on client side technologies.
 
-##Github Page:
+## Github Page:
 https://imanialexis.github.io/Pokedex-Gym/
 
-##Built With:
-*Object Oriented JavaScript
-*Data from https://pokeapi.co/
-*AJAX
-*jQuery
-*HTML5
-*Sass
-*Bootstrap
+## Goal:
+To collaborate on a pokemon gym website showcasing all chosen pokemon from a prior solo pokemon project by utilizing libraries written by individual group members. This project is focused on client-side technologies.
+
+## Built With:
+* Object Oriented JavaScript
+* Data from https://pokeapi.co/
+* AJAX
+* jQuery
+* HTML5
+* CSS 3 with Sass
+* Bootstrap
