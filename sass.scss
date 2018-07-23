@@ -28,13 +28,25 @@ body {
     font-family: 'Pokemon GB'
 }
 
-#bottom-wrapper {
+#trainer-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 200px;    
+    font-family: 'Pokemon GB';
     padding-right: 25px;
-    padding-left: 25px;
+    margin-left: 45px;
+    margin-top: 200px;
+
+
+}
+
+#bottom-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    padding-right: 35px;
+    padding-left: 35px;
+    margin-right: 45px;
 }
 
 #history-content {

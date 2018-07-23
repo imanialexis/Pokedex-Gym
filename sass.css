@@ -21,13 +21,22 @@ body {
   text-align: center;
   font-family: "Pokemon GB"; }
 
+#trainer-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Pokemon GB';
+  padding-right: 25px;
+  margin-left: 45px;
+  margin-top: 200px; }
+
 #bottom-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 200px;
-  padding-right: 25px;
-  padding-left: 25px; }
+  padding-right: 35px;
+  padding-left: 35px;
+  margin-right: 45px; }
 
 #history-content {
   text-align: center;
