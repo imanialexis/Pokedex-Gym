@@ -4,7 +4,7 @@
 }
 
 body {
-    background: linear-gradient(to bottom right, red, yellow);
+    background: linear-gradient(to bottom right, #00a86b, yellow);
 
 }
 #header-wrapper {
@@ -28,17 +28,38 @@ body {
     font-family: 'Pokemon GB'
 }
 
-#bottom-wrapper {
+#trainer-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 200px;    
+    font-family: 'Pokemon GB';
+    padding-right: 25px;
+    margin-left: 45px;
+    margin-top: 200px;
+
+
 }
 
-#history-content {
+#bottom-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    padding-right: 35px;
+    padding-left: 35px;
+    margin-right: 45px;
+}
+
+#history-title {
     text-align: center;
     margin-top: 200px;   
     font-family: 'Pokemon GB'
+    
+}
+
+#history-content {
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 20px;
+    margin-right: 20px
     
 }
 
