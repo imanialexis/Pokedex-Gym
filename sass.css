@@ -47,4 +47,7 @@ body {
   .modal #pokemonInfo li, .modal #statsInfo li {
     list-style: none; }
 
+#rainbowBadge:hover {
+  cursor: pointer; }
+
 /*# sourceMappingURL=sass.css.map */
