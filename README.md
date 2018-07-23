@@ -9,7 +9,7 @@ To collaborate on a pokemon gym website showcasing all chosen pokemon from a pri
 
 ## Built With:
 * Object Oriented JavaScript
-* Data from https://pokeapi.co/
+* RESTful API : https://pokeapi.co/
 * AJAX
 * jQuery
 * HTML5
