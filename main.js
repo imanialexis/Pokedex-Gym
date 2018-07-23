@@ -194,5 +194,6 @@ function slideNext(){
 //Audio JS
 function play() {
     let audio = document.getElementById("easterEggAudio");
+    audio.volume = 0.1;
     audio.play();
 }
