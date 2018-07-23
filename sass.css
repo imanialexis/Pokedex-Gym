@@ -2,7 +2,7 @@
   font-family: 'Pokemon GB';
   src: url("fonts/Pokemon-GB.ttf"); }
 body {
-  background: linear-gradient(to bottom right, red, yellow); }
+  background: linear-gradient(to bottom right, #00a86b, yellow); }
 
 #header-wrapper {
   display: flex;
