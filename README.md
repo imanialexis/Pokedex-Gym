@@ -1,4 +1,4 @@
-# Pokemon Gym Group Project by : [Imani](http://github.com/imanialexis) :sunglasses: ,[Lilian](http://github.com/ngolilli94)  :rabbit2:, &  [Ben](http://github.com/benjwexler)  :bowtie:
+# Pokemon Gym Group Project by : [Imani](http://github.com/imanialexis) :sunglasses: ,[Lillian](http://github.com/ngolilli94)  :rabbit2:, &  [Ben](http://github.com/benjwexler)  :bowtie:
 
 
 ## Github Page:
